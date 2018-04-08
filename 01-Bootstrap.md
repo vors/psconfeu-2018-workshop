@@ -32,6 +32,21 @@ Try run it one more time.
 
 **Question**: How to fix the error on the second run?
 
+## Understand the structure of the generated markdown
+
+Please take a look at the generated file.
+Its structure closely resembles the `Get-Help` output.
+You can find the formal schema description [here](https://github.com/PowerShell/platyPS/blob/6048cd6db6b2b424863d76bea00462168a494a91/platyPS.schema.md).
+
+There are few non-trivial gotchas in the schema:
+
+- You don't need to edit the SYNTAX section by hands.
+  It's for convinince in the online help only.
+  Everything, except the parameter set name will be ignored in the external help generation.
+- Every parameter has metadata in the key-value form.
+  It's populated from the actual parameter metadata in the code.
+  In most cases, you don't need to change it by hands.
+- You can add more Examples by copy-pasting the template.
 
 ## Writing the documentation in the template
 
