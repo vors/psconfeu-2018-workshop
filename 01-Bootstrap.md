@@ -38,6 +38,8 @@ Try run it one more time.
 Open the `./docs/New-Greeting.md` file and write the documentation by replacing all the placeholders (they start with `{{`) by something meaningful.
 Please, don't use just dummy entries, put some love in the writing!
 
+*Note: once markdown is generated you can start treating it as the source of truth for the documentation. I.e. fix typos and add new content to the markdown help.*
+
 Don't forget an example!
 
 **Pro Tip**: In the Example section you can do one of 3 options:
@@ -83,3 +85,7 @@ Re-load the module and get the help out of it.
 Import-Module ./Greet.psm1 -Force
 Get-Help New-Greeting -Full
 ``` 
+
+Congratulations, you just learn how to use platyPS with cmdlets help!
+
+### [Next: about topics](02-AboutTopics.md)
