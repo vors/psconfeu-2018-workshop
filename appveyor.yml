@@ -1,0 +1,16 @@
+install:
+    - ps: |
+        # Here we nstall platyPS to the worker machine form the gallery
+        Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+        Install-Module platyPS -Force
+        Import-Module platyPS
+
+build_script:
+    - ps: |
+        # TODO: create external help in en-US folder
+
+test_script:
+    - ps: |
+        # TODO: load the Greet module and write a script
+        # that will throw if docs are not up-to-date with the code.
+        # In other words, if Update-MarkdownHelp changes the markdown.

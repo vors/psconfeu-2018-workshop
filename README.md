@@ -30,6 +30,10 @@ Install platyPS locally
 Install-Module -Scope CurrentUser platyPS
 ```
 
+### AppVeyor
+
+If you are not familiar with Continuous Integration or AppVeyor [here](http://ramblingcookiemonster.github.io/GitHub-Pester-AppVeyor/) is a great write-up by @ramblingcookiemonster.
+
 ## How to use
 
 Clone the repo to your machine **before** the workshop.
