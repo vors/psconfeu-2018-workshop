@@ -4,9 +4,9 @@ This repo contains materials for workshop about [platyPS](https://github.com/Pow
 
 ## Prerequisites
 
-You can use any platoform (Windows, MacOS, Linux) and any powershell edition (Full, Core).
-Not all feature of platyPS may be fully compatible with some old powershell versions.
-For the full edition v5.1 (latest) is recommended.
+You can use any platform (Windows, macOS, Linux) and any PowerShell edition (Full, Core).
+Not all feature of platyPS may be fully compatible with some old PowerShell versions.
+For the full edition, v5.1 (latest) is recommended.
 
 ### Git
 
@@ -26,7 +26,7 @@ If you haven't use markdown before, please read the [learn markdown in 60 second
 
 Install platyPS locally
 
-```
+```powershell
 Install-Module -Scope CurrentUser platyPS
 ```
 
@@ -38,9 +38,9 @@ Clone the repo to your machine **before** the workshop.
 git clone https://github.com/vors/psconfeu-2018-workshop
 ```
 
-The workshop is breaked down into the sections, you should follow them in-order.
-Every section represented by `nn-SectionName.md` file that talks about the concepts and
-walks you thru the exercise to master them.
+The workshop is breaked down into the sections, you should follow them in order.
+Every section is represented by `nn-SectionName.md` file that talks about the concepts and
+walks you through the exercise to master them.
 Every section assumes that your `pwd` is the root of the repo.
 
 ### [Start Here](01-Bootstrap.md)
