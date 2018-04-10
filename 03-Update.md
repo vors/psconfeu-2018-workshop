@@ -49,7 +49,7 @@ Check that attributes you put on the parameter in `psm1` file correspond to the 
 Let's add new cmdlet `Get-Name` which will return a list of names that can be passed to the `New-Greeting`.
 Use the same file `Greet.psm1`.
 Come up with a couple parameters for it (maybe in different parameter sets?).
-Now bootstrape the documentation for this parameter.
+Now bootstrap the documentation for this parameter.
 
 ```
 New-MarkdownHelp ...
@@ -65,4 +65,4 @@ Get-Help ...
 
 Congratulations, you just learn how to update your help when it's out of date!
 
-### [Next: about topics](04-GitHub.md)
+### [Next: about topics](04-CI.md)

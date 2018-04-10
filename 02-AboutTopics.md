@@ -36,7 +36,7 @@ Get-Help about_greetings
 ```
 
 You can always edit the markdown for the about topic and re-generate it.
-Markdown now can be viewed as the source of thruth for your documentation.
+Markdown now can be viewed as the source of truth for your documentation.
 
 Congratulations, you just learn how to use platyPS with about topics!
 

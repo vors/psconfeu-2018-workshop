@@ -1,15 +1,15 @@
 # Getting started
 
-To start using platyPS in your project, you would need to do a one-time bootstraping.
+To start using platyPS in your project, you would need to do a one-time bootstrapping.
 You will get 1 markdown file for every cmdlet you have in the module
-and you would need to poluate the documentation string in the template.
+and you would need to populate the documentation string in the template.
 
 We will use the `Greet.psm1` module for this exercise.
 
-## Get youself familiar with the training module
+## Get yourself familiar with the training module
 
 Please, read the module source code.
-It's very simple and tries to emphasise different parameters metadata,
+It's very simple and tries to emphasize different parameters metadata,
 not the implementation or usefulness.
 
 ## Generate markdown for the module
@@ -41,7 +41,7 @@ You can find the formal schema description [here](https://github.com/PowerShell/
 There are few non-trivial gotchas in the schema:
 
 - You don't need to edit the SYNTAX section by hands.
-  It's for convinince in the online help only.
+  It's for convenience in the online help only.
   Everything, except the parameter set name will be ignored in the external help generation.
 - Every parameter has metadata in the key-value form.
   It's populated from the actual parameter metadata in the code.
@@ -58,7 +58,7 @@ Please, don't use just dummy entries, put some love in the writing!
 Don't forget an example!
 
 **Pro Tip**: In the Example section you can do one of 3 options:
-1. Ommit the output of the command.
+1. Omit the output of the command.
    Makes it easy to write, but not great as documentation.
 2. Put the output in the same fenced codeblock as the command itself.
    This is an ok option, but if you want the powershell syntax highlighting
@@ -83,7 +83,7 @@ Mode                LastWriteTime         Length Name
 
 ## Generate the external help file (aka MAML XML)
 
-Now we can convert the markdown to the help file that powe
+Now we can convert the markdown to the help file that powershell help system can understand.
 Use `en-US` for the output path.
 If you are on non-English locale use an appropriate locale name instead.
 
@@ -93,7 +93,7 @@ New-ExternalHelp -OutputPath en-US -Path ./docs
 
 ## Trying it out
 
-Now time to reap the fruties!
+Now time to reap the fruits!
 Re-load the module and get the help out of it.
 
 ```
