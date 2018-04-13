@@ -63,6 +63,6 @@ Re-load the module and check that `Get-Name` got the help populated
 Get-Help ...
 ```
 
-Congratulations, you just learn how to update your help when it's out of date!
+**Congratulations, you just learn how to update your help when it's out of date!**
 
 ### [Next: about topics](04-CI.md)

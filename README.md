@@ -42,7 +42,7 @@ Clone the repo to your machine **before** the workshop.
 git clone https://github.com/vors/psconfeu-2018-workshop
 ```
 
-The workshop is breaked down into the sections, you should follow them in order.
+The workshop is broken down into the sections, you should follow them in order.
 Every section is represented by `nn-SectionName.md` file that talks about the concepts and
 walks you through the exercise to master them.
 Every section assumes that your `pwd` is the root of the repo.
