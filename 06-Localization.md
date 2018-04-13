@@ -2,9 +2,18 @@
 
 One of the benefits of using MAML XML help instead of comment based help is
 support for multiple languages.
-How does platyPS stacks up against MAML here?
+How does platyPS handle it?
 
-## 1. Change UICulture for tests
+## 1. Write platyPS markdown
+
+PlatyPS schema currently only supports English version of the header sections.
+I.e. you would always need to use English version of the word `SYNOPSIS`.
+
+But that doesn't mean that all the content cannot be authored in another language!
+You can keep all the metadata in English (i.e. `yaml` parameters section and headers),
+but all the content could be authored in any language.
+
+## 2. Change UICulture for tests
 
 To properly test out the multiple language support, you would need to switch back and forth
 between locales.
@@ -30,15 +39,6 @@ Get-Help
 
 Remember that you need to `-Force`-import the module after changing the locale for change to take place.
 Otherwise `Get-Help` would show a cached version.
-
-## 2. Write platyPS markdown
-
-PlatyPS schema currently only supports English version of the header sections.
-I.e. you would always need to use English version of the word `SYNOPSIS`.
-
-But that doesn't mean that all the content cannot be authored in another language!
-You can keep all the metadata in English (i.e. `yaml` parameters section and headers),
-but all the content could be authored in any language.
 
 ## 3. Try it
 

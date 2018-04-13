@@ -48,7 +48,7 @@ There are few non-trivial gotchas in the schema:
   In most cases, you don't need to change it by hands.
 - You can add more Examples by copy-pasting the template.
 
-## 4. Writing the documentation in the template
+## 4. Write the documentation in the template
 
 Open the `./docs/New-Greeting.md` file and write the documentation by replacing all the placeholders (they start with `{{`) by something meaningful.
 Please, don't use just dummy entries, put some love in the writing!

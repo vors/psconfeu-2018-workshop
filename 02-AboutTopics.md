@@ -26,7 +26,7 @@ New-ExternalHelp ...
 
 You should see `about_greetings.help.txt` in the output information.
 
-## 4. Trying it out
+## 4. Try it out
 
 Re-load the module and try to get the output of the created topic.
 
