@@ -1,6 +1,6 @@
 # PlatyPS: from 0 to 1 and beyond
 
-This repo contains materials for workshop about [platyPS](https://github.com/PowerShell/platyPS)
+This repo contains materials for the [platyPS](https://github.com/PowerShell/platyPS) workshop.
 
 ## Prerequisites
 

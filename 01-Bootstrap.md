@@ -6,13 +6,13 @@ and you would need to populate the documentation string in the template.
 
 We will use the `Greet.psm1` module for this exercise.
 
-## Get yourself familiar with the training module
+## 1. Get yourself familiar with the training module
 
 Please, read the module source code.
 It's very simple and tries to emphasize different parameters metadata,
 not the implementation or usefulness.
 
-## Generate markdown for the module
+## 2. Generate markdown for the module
 
 First, you need to import the module to the session to make it visible to platyPS.
 
@@ -32,7 +32,7 @@ Try run it one more time.
 
 **Question**: How to fix the error on the second run?
 
-## Understand the structure of the generated markdown
+## 3. Understand the structure of the generated markdown
 
 Please take a look at the generated file.
 Its structure closely resembles the `Get-Help` output.
@@ -48,7 +48,7 @@ There are few non-trivial gotchas in the schema:
   In most cases, you don't need to change it by hands.
 - You can add more Examples by copy-pasting the template.
 
-## Writing the documentation in the template
+## 4. Writing the documentation in the template
 
 Open the `./docs/New-Greeting.md` file and write the documentation by replacing all the placeholders (they start with `{{`) by something meaningful.
 Please, don't use just dummy entries, put some love in the writing!
@@ -61,9 +61,11 @@ Don't forget an example!
 1. Omit the output of the command.
    Makes it easy to write, but not great as documentation.
 2. Put the output in the same fenced codeblock as the command itself.
-   This is an ok option, but if you want the powershell syntax highlighting
-   on your code and not your input, we can do better.
-3. (Recommended) Put the example command in the codeblock with powershell [language moniker](https://spec.commonmark.org/0.28/#info-string)
+   This is an ok option. But it's not ideal to have powershell syntax highlighting
+   on both your code and your input.
+   We can do better.
+3. (Recommended) Put the example command in the codeblock with powershell [language moniker](https://spec.commonmark.org/0.28/#info-string).
+   Put output in a **separate** codeblock without language moniker.
 
 ~~~
 ```powershell
@@ -81,7 +83,7 @@ Mode                LastWriteTime         Length Name
 
 ~~~
 
-## Generate the external help file (aka MAML XML)
+## 5. Generate the external help file (aka MAML XML)
 
 Now we can convert the markdown to the help file that powershell help system can understand.
 Use `en-US` for the output path.
@@ -91,7 +93,7 @@ If you are on non-English locale use an appropriate locale name instead.
 New-ExternalHelp -OutputPath en-US -Path ./docs
 ```
 
-## Preview
+## 6. Preview
 
 You can get the help preview without even re-loading the module.
 
@@ -103,7 +105,7 @@ In fact, you don't need to have the module loaded in the session - all you need 
 This can be useful for help development,
 when module is not locally available and only the markdown is available to you.
 
-## Trying it out
+## 7. See it live
 
 Now time to reap the fruits!
 Re-load the module and get the help out of it.
@@ -112,6 +114,8 @@ Re-load the module and get the help out of it.
 Import-Module ./Greet.psm1 -Force
 Get-Help New-Greeting -Full
 ``` 
+
+**Question**: Is it the same as what `Get-HelpPreview` returned?
 
 **Congratulations, you just learn how to use platyPS with cmdlets help!**
 
