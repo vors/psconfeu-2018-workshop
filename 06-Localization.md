@@ -6,7 +6,7 @@ How does platyPS handle it?
 
 ## 1. Write platyPS markdown
 
-PlatyPS schema currently only supports English version of the header sections.
+PlatyPS schema currently only supports the English version of the header sections.
 I.e. you would always need to use English version of the word `SYNOPSIS`.
 
 But that doesn't mean that all the content cannot be authored in another language!
@@ -43,7 +43,7 @@ Otherwise `Get-Help` would show a cached version.
 ## 3. Try it
 
 Copy your English markdown file into a separate folder and localize it.
-Keep the metadata in English. 
+Keep the metadata in English.
 Create automation that outputs the external help in appropriate locale.
 
 ```powershell

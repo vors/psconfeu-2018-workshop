@@ -1,6 +1,6 @@
 # Getting started
 
-To start using platyPS in your project, you would need to do a one-time bootstrapping.
+To start using platyPS in your project, you will need to do a one-time bootstrapping.
 You will get 1 markdown file for every cmdlet you have in the module
 and you would need to populate the documentation string in the template.
 
@@ -9,7 +9,7 @@ We will use the `Greet.psm1` module for this exercise.
 ## 1. Get yourself familiar with the training module
 
 Please, read the module source code.
-It's very simple and tries to emphasize different parameters metadata,
+It's very simple and tries to emphasize different parameter's metadata,
 not the implementation or usefulness.
 
 ## 2. Generate markdown for the module
@@ -40,17 +40,17 @@ You can find the formal schema description [here](https://github.com/PowerShell/
 
 There are few non-trivial gotchas in the schema:
 
-- You don't need to edit the SYNTAX section by hands.
+- You don't need to edit the SYNTAX section by hand.
   It's for convenience in the online help only.
   Everything, except the parameter set name will be ignored in the external help generation.
 - Every parameter has metadata in the key-value form.
   It's populated from the actual parameter metadata in the code.
-  In most cases, you don't need to change it by hands.
+  In most cases, you don't need to change it by hand.
 - You can add more Examples by copy-pasting the template.
 
 ## 4. Write the documentation in the template
 
-Open the `./docs/New-Greeting.md` file and write the documentation by replacing all the placeholders (they start with `{{`) by something meaningful.
+Open the `./docs/New-Greeting.md` file and write the documentation by replacing all the placeholders (they start with `{{`) with something meaningful.
 Please, don't use just dummy entries, put some love in the writing!
 
 *Note: once markdown is generated you can start treating it as the source of truth for the documentation. I.e. fix typos and add new content to the markdown help.*
@@ -85,7 +85,7 @@ Mode                LastWriteTime         Length Name
 
 ## 5. Generate the external help file (aka MAML XML)
 
-Now we can convert the markdown to the help file that powershell help system can understand.
+Now we can convert the markdown to a help file that the powershell help system can understand.
 Use `en-US` for the output path.
 If you are on non-English locale use an appropriate locale name instead.
 
@@ -103,17 +103,17 @@ Get-HelpPreview -Path ./en-US/*.xml
 
 In fact, you don't need to have the module loaded in the session - all you need for the preview is the xml file.
 This can be useful for help development,
-when module is not locally available and only the markdown is available to you.
+when the module is not locally available and only the markdown is available to you.
 
 ## 7. See it live
 
 Now time to reap the fruits!
-Re-load the module and get the help out of it.
+Re-load the module and get the help for it.
 
 ```
 Import-Module ./Greet.psm1 -Force
 Get-Help New-Greeting -Full
-``` 
+```
 
 **Question**: Is it the same as what `Get-HelpPreview` returned?
 
