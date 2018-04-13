@@ -91,6 +91,18 @@ If you are on non-English locale use an appropriate locale name instead.
 New-ExternalHelp -OutputPath en-US -Path ./docs
 ```
 
+## Preview
+
+You can get the help preview without even re-loading the module.
+
+```powershell
+Get-HelpPreview -Path ./en-US/*.xml
+```
+
+In fact, you don't need to have the module loaded in the session - all you need for the preview is the xml file.
+This can be useful for help development,
+when module is not locally available and only the markdown is available to you.
+
 ## Trying it out
 
 Now time to reap the fruits!
@@ -101,6 +113,6 @@ Import-Module ./Greet.psm1 -Force
 Get-Help New-Greeting -Full
 ``` 
 
-Congratulations, you just learn how to use platyPS with cmdlets help!
+**Congratulations, you just learn how to use platyPS with cmdlets help!**
 
 ### [Next: about topics](02-AboutTopics.md)
