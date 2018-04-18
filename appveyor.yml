@@ -1,3 +1,6 @@
+init:
+    - git config --global core.autocrlf true
+
 install:
     - ps: |
         # Here we nstall platyPS to the worker machine form the gallery
