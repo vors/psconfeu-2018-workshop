@@ -4,8 +4,7 @@ function New-Greeting() {
         [Parameter(Mandatory=$true, 
             ValueFromPipeline=$true)]
         [string]$Name,
-        [string]$Greeting = "Hello",
-        [string]$FooBar
+        [string]$Greeting = "Hello"
     )
 
     process {
