@@ -17,7 +17,7 @@ New-Greeting [-Name] <String> [-Greeting <String>] [-FooBar <String>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Greet people at the conference.
+Greet people at a conference.
 
 ## EXAMPLES
 
